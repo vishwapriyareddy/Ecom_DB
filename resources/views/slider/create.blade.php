@@ -30,7 +30,7 @@
 
       <div class="form-group">
         <label style="margin:2Opx!important" for="exampleInputEmail1">Slider Message</label>
-        <textarea id="editor1" name="sliderMessage"></textarea>
+        <textarea id="editor1" name="sliderMessage" style="width:300px; height:150px;"></textarea>
     </div>
 
     <div class="form-group">
@@ -53,4 +53,4 @@
    reader.readAsDataURL(event.target.files[0]);
     }
   </script>
-@stop
+@stop 

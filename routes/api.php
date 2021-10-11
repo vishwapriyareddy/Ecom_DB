@@ -18,5 +18,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('get-all-categories','Api\CategoryController@index');
-Route::get('get-all-blog-posts','Api\BlogPostController@index');
+Route::get('categories','Api\CategoryController@index');
+Route::get('product','Api\ProductController@index');
+Route::get('slider','Api\SliderController@index');
+Route::get('order','Api\OrderController@index');
+
+//Route::get('get-all-blog-posts','Api\BlogPostController@index');

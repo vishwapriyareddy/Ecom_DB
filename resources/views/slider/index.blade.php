@@ -26,16 +26,19 @@
         <table id="datatablesSimple">
             <thead>
                 <tr>
-                    <th>Category Name</th>
-                    <th>Category Icon</th>
+                    <th>Slider Name</th>
+                    <th>Slider Icon</th>
+                    <th>Slider Message</th>
                     <th>Actions</th>
               
                 </tr>
             </thead>
             <tfoot>
                 <tr>
-                    <th>Category Name</th>
-                    <th>Category Icon</th>
+                    <th>Slider Name</th>
+                    <th>Slider Icon</th>
+                    <th>Slider Message</th>
+
                     <th>Actions</th>
              
                 </tr>
@@ -44,6 +47,7 @@
                 @foreach ($sliders as $slider )
                 <tr>
                     <td>{{$slider->title}}</td>
+                    <td>{!! $slider->message !!}</td>
                     <td> <img src="{{ $slider->image_url }}" width="100" height="100"></td>
                         <td>
                             <a href="{{ URL::to('edit-slider') }}/{{ $slider->id }}" class="btn btn-outline-primary btn-sm" >Edit</a>

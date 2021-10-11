@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\SliderResource;
+use App\Models\Models\Slider;
+
 use Illuminate\Http\Request;
 
 class SliderController extends Controller
@@ -14,7 +17,7 @@ class SliderController extends Controller
      */
     public function index()
     {
-        //
+       return SliderResource::collection(Slider::all());
     }
 
     /**
